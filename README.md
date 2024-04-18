@@ -3,11 +3,11 @@
 <p>O desafio é trazer os testes automatizados da aplicação do site <a href="https://mantis-prova.base2.com.br/login_page.php">Mantis</a> </p>
 
 <h3>Demostração da Aplicação</h3>
-<p>Antes de começar, você precisa realizar os seguintes passos:</p>
+<p>Antes de começar, você deve se certificar dos itens abaixo:</p>
 <ol>
-	<li>Certifique de possuir o Maven instalado</code></li>
-	<li>Certifique de possuir o Java 8 instalado</li> 
-	<li>Certifique que as variáveis %MAVEN_HOME% e %JAVA_HOME% estão nas variáveis de sistema e em Path</li>
+	<li>Maven instalado</code></li>
+	<li>Java 8 instalado</li> 
+	<li>Possuir as variáveis %MAVEN_HOME% e %JAVA_HOME% estão nas variáveis de sistema e em Path</li>
 </ol>
 <p></p>
 
