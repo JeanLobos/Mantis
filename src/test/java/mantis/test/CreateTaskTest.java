@@ -51,11 +51,11 @@ public class CreateTaskTest {
         driver.findElement(By.id("password")).sendKeys(password);
         driver.findElement(By.className("width-40")).submit();
 
-        // Aguardar até que o botão "Criar Tarefa" esteja visível
+        // Waiting button "Criar Tarefa"
         WebElement createTaskButton = driver.findElement(By.className("btn-sm"));
         createTaskButton.click();
 
-        // Selecionar projeto
+        // Select project
         WebElement selectProject = driver.findElement(By.id("select-project-id"));
         Select findProject = new Select(selectProject);
         findProject.selectByVisibleText("Teste");
@@ -82,11 +82,11 @@ public class CreateTaskTest {
         // Create task
         driver.findElement(By.className("btn-round")).click();
 
-        // Esperar pelos detalhes da tarefa
+        // Waiting task details
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("bug-project")));
 
-        // Validar os detalhes da tarefa
+        // Validate task details
         assertEquals("Teste", driver.findElement(By.className("bug-project")).getText());
         assertEquals(login, driver.findElement(By.className("bug-reporter")).getText());
         assertEquals(summary, driver.findElement(By.className("bug-summary")).getText());
